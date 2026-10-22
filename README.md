@@ -11,15 +11,15 @@ Based on simulated data of 8 made up records, used to build and test the analysi
 - Built a simulated dataset of 8 seizure records in Python, stored as a list of dictionaries
 - Each record has a patient ID, age in months, fever in celsius (°C), and seizure length in minutes
 ## Classification 
-- Simple: 15 minutes or less (< 15)
-- Complex: longer than 15 minutes (>= 15)
+- Simple: 15 minutes or less (<= 15)
+- Complex: longer than 15 minutes (> 15)
 - Duration was the only criterion
 ## Analysis
-- Used 'for' loops 'if' conditions to sort records into simple and complex groups
-- Collected values from each group into lists with '.append()'
-- Averages: 'sum()' / 'len()', rounded to 2 decimals (Q1,Q3,Q5)
-- Count: 'len()' of the complex list (Q4)
-- Highest value: 'max()' of the simple list (Q2)
+- Used `for` loops `if` conditions to sort records into simple and complex groups
+- Collected values from each group into lists with `.append()`
+- Averages: `sum()` / `len()`, rounded to 2 decimals (Q1,Q3,Q5)
+- Count: `len()` of the complex list (Q4)
+- Highest value: `max()` of the simple list (Q2)
 - Comparison: looked at the two group averages side by side. It was descriptive only with no statistical test
 ## Results
 - Average fever for simple seizures: 39.76°C
